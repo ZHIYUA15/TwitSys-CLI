@@ -1,12 +1,10 @@
-Design Document for Twitter-like CLI Application
+**General Overview**
 
-General Overview
-
-App Name: TwitSys CLI
+App Name: **TwitSys CLI**
 
 We made the TwitSys CLI as a Twitter-like command-line interface application. Users can interact with a social media-like platform. Users can sign up, log in, post tweets, search for tweets and users, view followers, follow other users etc. we use SQLite for database management by using Python's sqlite3 library and Python3 codes to implement the entire program. User Guide Welcome to the Twitter-like CLI Application! Our user can enter number 1. Login 2. Sign Up 3. Exit (exit the program) Login: If you are the registered users, enter your username and password to access their account. (we will check SQL injection attacks as password is invisible at the time of typing). Sign Up: New users must provide valid personal information (user name, city, password, timezone, email) and receive a unique user ID. Main Menu: After login, users can enter number or symbol *. Main Menu (back to main manu) 6. Search for tweets 7. Search for users 8. Compose a tweet 9. List followers 0. Logout (exit program)
 
-Detailed Design
+**Detailed Design**
 
 Major Functions database.py: connect_to_db(db_name: str) -> sqlite3.Connection Responsibility: Establishes a connection to the SQLite database file specified by db_name. @Param db_name (str): The name of the database file to connect to. @Return: The database connection object or None if the connection fails.
 
@@ -44,9 +42,9 @@ tweet_operations.py compose_tweet(user_id, db_name): Responsibility: Allow a use
 
 search_tweets(keywords, db_name): Responsibility: Search for tweets matching the given keywords or hashtags. @param keywords: A list of keywords to search for within the tweets. @param db_name: The name of the database file to connect to for searching tweets. @return: A tuple containing the action code (0 for no action, 1 for retweet, 2 for reply) and the tweet ID of interest, if any.
 
-Testing Strategy
+**Testing Strategy**
 
-General Approach
+_General Approach_
 
 Functional Testing Scenario: Inserting valid and invalid follow relationships, such as a user attempting to follow themselves and duplicate follow entries. We need to ensure the 'follows' feature correctly enforces business rules and constraints, such as not allowing self-following and preventing duplicate follows. Tweet Insertions: Scenario: Adding tweets with registered and unregistered hashtags, and checking if hashtags not present in the hashtags table are handled correctly. We need to ensure validates the tweet creation process, ensuring that hashtag relationships are properly managed. Negative Testing and Non-Existing Entities: Scenario: Attempting to insert mentions for non-existent tweets and retweets for non-existent tweets or users. We need to ensure checks the database's referential integrity constraints to ensure that such operations are not allowed. SQL Injection: Scenario: Insert statements that appear to be attempts at SQL injection, which could potentially alter the database structure or data if not handled correctly, and , ensuring that all input is properly sanitized before executing SQL commands Scenarios
 
@@ -64,6 +62,6 @@ AARYAN SINGH (ajsingh) Responsibilities: Made key aspects of the tweet operation
 
 SUHANSH PATEL (suhanshk) Responsibilities: User Operations: Implemented user search, follower listing, and follow features, improving overall code Documentation and Code Refinement: Reviewed and enhanced code quality, addressed bugs. Assisted significantly with the followers function, main menu, and code improvement. Hours Allocated: Approximately 24 hours. Progress Tracking: Through documentation commits and update meetings.
 
-Coordination Method
+**Coordination Method**
 
 Weekly Meetings: To discuss progress, challenges, and re-allocate tasks if needed. Communication Platform: Using Discord and phone call/text msg for daily check-ins. Version Control: Using Git for code versioning with separate branches for each member's tasks. Project Management Tool: Utilizing a tool like ChatGPT for double-check codes correctness.
