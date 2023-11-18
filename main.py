@@ -12,6 +12,9 @@ from tweet_operations import * # Importing all functions from tweet_operations m
 from user_operations import * # Importing all functions from user_operations module
 from database import connect_to_db as connect, initial_query as initiate # Importing specific functions from database module
 
+# Flask app setup
+from flask import Flask, render_template, request, redirect, url_for
+app = Flask(__name__)
 
 
 def display_menu1():

@@ -93,3 +93,15 @@ def initial_query(conn):
     for q in query:
         cur.execute(q)
     conn.commit()
+
+
+def get_db_connection():
+    '''
+    Responsibility: Establishes a connection to the SQLite database file specified by db_name.
+    @parem: None
+    @return: The database connection object or None if the connection fails.
+
+    '''
+    conn = sqlite3.connect('tweets_table.db')  # connects to the database
+    conn.row_factory = sqlite3.Row
+    return conn

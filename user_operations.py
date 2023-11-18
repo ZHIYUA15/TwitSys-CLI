@@ -5,6 +5,7 @@ import sqlite3
 from database import connect_to_db
 from follow_user import follow_user
 
+
 # We'll use the existing hash_password function for hashing passwords.
 
 # checking valid email ID's
@@ -258,7 +259,8 @@ def display_user_details(userid_self, user_id, db_name):
             valid = False
             while not valid:
                 if len_tw > range_tw:
-                    choice = input('\nPress f to follow user, m to load more tweets and # to continue: ')
+                    choice = input(
+                        '\nPress f to follow user, m to load more tweets and # to continue: ')
                 else:
                     choice = input('\nPress f to follow and # to continue: ')
 
