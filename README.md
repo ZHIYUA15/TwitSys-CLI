@@ -1,4 +1,5 @@
 **General Overview**
+![UI](https://github.com/ZHIYUA15/TwitSys-CLI/assets/97127926/b07216d5-bfa1-40df-8574-efeaae719cb9)
 
 App Name: **TwitSys CLI**
 
