@@ -54,14 +54,6 @@ User Operations: Search for users with partial and complete keywords, attempt fo
 Follower Listings: List followers, validate the selection of followers, and test the follow functionality. Bugs and Issues solved refer to Github: https://github.com/ualberta-cmput291/f23-proj1-the-sequel/issues?q=is%3Aissue+is%3Aclosed
 Task Allocations
 
-FALAK SETHI (fsethi) Responsibilities: Framework Design and Coordinator: Design and implementation of the origin user interface menus (login, sign-up, main menu), setting up the initial database schema, then continue to work as a group for rest of parts and fixed different issues. User Testing: Conducting manual tests for user interface functionality and reporting bugs. Hours Allocated: Approximately 24 hours. Progress Tracking: Regular updates in group meetings and commits to the version control system.
-
-ZHIYUAN LI (zhiyua15) Responsibilities: Adding follower and followed functions, check the functionalities of login and, managing connections, and optimizing queries by coming up more test cases, reporting issues and add comments. Also, I accomplished DesignDoc.pdf file. Security: Implementing measures to prevent SQL injection and ensuring password security. Hours Allocated: Approximately 24 hours. Progress Tracking: Through shared documentation and code review sessions.
-
-AARYAN SINGH (ajsingh) Responsibilities: Made key aspects of the tweet operations, including development, search functionality, and user interactions within the application. He also contributes to login processes and the resolution of program-wide issues. Progress and Final Integration Testing: Ensuring that the most the functionalities satisfy the rubric. Hours Allocated: Approximately 24 hours. Progress Tracking: Version control branches for feature development.
-
-SUHANSH PATEL (suhanshk) Responsibilities: User Operations: Implemented user search, follower listing, and follow features, improving overall code Documentation and Code Refinement: Reviewed and enhanced code quality, addressed bugs. Assisted significantly with the followers function, main menu, and code improvement. Hours Allocated: Approximately 24 hours. Progress Tracking: Through documentation commits and update meetings.
-
 **Coordination Method**
 
 Weekly Meetings: To discuss progress, challenges, and re-allocate tasks if needed. Communication Platform: Using Discord and phone call/text msg for daily check-ins. Version Control: Using Git for code versioning with separate branches for each member's tasks. Project Management Tool: Utilizing a tool like ChatGPT for double-check codes correctness.
