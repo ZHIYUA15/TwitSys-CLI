@@ -1,44 +1,208 @@
-/* styles.css */
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
-/* styles.css */
-
-/* Add a CSS class to style the logo */
-/* styles.css */
-
-/* Reduce the logo's width */
-.header-logo-small {
-  width: 40px !important; /* Add !important to override Bootstrap */
-}
-
-/* Float the logo to the left */
-.header-logo-small {
-  float: left;
-  margin-right: 10px; /* Add some margin to separate the logo from other content */
-}
-
-  
-
-header {
-    background-color: #1DA1F2;
-    color: #fff;
+header,
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 main {
-    padding: 15px;
+  margin: 1rem;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
+/* Navigation Bar */
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Profile and Followers */
+.profile-section,
+.followers-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.profile-section h1,
+.followers-section h1 {
+  margin-bottom: 20px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+
+  header,
+  footer {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  button {
     width: 100%;
+    padding: 10px;
+  }
 }
 
-/* Add any additional styles you want here */
+.compose-tweet-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.compose-tweet-textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.compose-tweet-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.compose-tweet-button:hover {
+  background-color: #0056b3;
+}
+
+.profile-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.profile-tweet {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.follow-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.follow-button:hover {
+  background-color: #218838;
+}
+
+.tweet-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.tweet-actions {
+  margin-top: 10px;
+}
+
+.tweet-action-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.tweet-action-button:hover {
+  background-color: #5a6268;
+}
+
+.followers-list {
+  list-style: none;
+  padding: 0;
+}
+
+.follower-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.follower-profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.dashboard-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.dashboard-stat {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}

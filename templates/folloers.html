@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Followers</title>
+    <!-- Add links to CSS here -->
+</head>
+<body>
+    <h2>Your Followers</h2>
+    <ul>
+        {% for follower in followers %}
+            <li>{{ follower.username }}</li> <!-- Replace 'username' with the actual attribute name -->
+        {% endfor %}
+    </ul>
+</body>
+</html>

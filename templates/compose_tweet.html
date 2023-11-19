@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compose Tweet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <!-- Your Header Here -->
+    </header>
+    <main>
+        <form action="/compose_tweet" method="post">
+            <label for="tweet">Your Tweet:</label>
+            <textarea id="tweet" name="tweet" required></textarea>
+            <button type="submit">Tweet</button>
+        </form>
+    </main>
+    <footer>
+        <!-- Your Footer Here -->
+    </footer>
+</body>
+</html>
