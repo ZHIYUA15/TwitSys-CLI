@@ -1,0 +1,44 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* styles.css */
+
+/* Add a CSS class to style the logo */
+/* styles.css */
+
+/* Reduce the logo's width */
+.header-logo-small {
+  width: 40px !important; /* Add !important to override Bootstrap */
+}
+
+/* Float the logo to the left */
+.header-logo-small {
+  float: left;
+  margin-right: 10px; /* Add some margin to separate the logo from other content */
+}
+
+  
+
+header {
+    background-color: #1DA1F2;
+    color: #fff;
+}
+
+main {
+    padding: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add any additional styles you want here */
